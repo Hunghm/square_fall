@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "square_fall",
+  "id": "60e66e06-725a-4189-92ac-19b99d04a5b1",
+  "version": "2.4.1",
+  "isNew": false
+}

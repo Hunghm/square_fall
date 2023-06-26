@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "972122b2-480d-4f7c-b2c8-f11f686b2895",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 640,
+  "height": 960,
+  "platformSettings": {},
+  "subMetas": {
+    "ios_launch_640x960": {
+      "ver": "1.0.4",
+      "uuid": "9e92e44a-60da-4357-80fd-f65bb83b844d",
+      "rawTextureUuid": "972122b2-480d-4f7c-b2c8-f11f686b2895",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 640,
+      "height": 960,
+      "rawWidth": 640,
+      "rawHeight": 960,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
