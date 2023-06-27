@@ -38,12 +38,14 @@ cc.Class({
 
     update: function (dt) {
         // Determine if the distance between the Star and main character is less than the collecting distance for each frame
-        if ((this.getPlayerDistance() < this.pickRadius) ) {
-            // Invoke collecting behavior
+        if ((this.getPlayerDistance() < this.pickRadius) && this.node.color.equals(cc.Color(189, 66, 66, 255))) {
             this.game.gainScore();
             this.onPicked();
             return;
         }else
+        if ((this.getPlayerDistance() < this.pickRadius) && !this.node.color.equals(cc.Color(189, 66, 66, 255))) {
+            this.onPicked();
+        } else
         if ((this.node.y <= -300)) {
             this.onPicked();
             return;

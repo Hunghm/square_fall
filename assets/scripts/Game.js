@@ -40,6 +40,14 @@ cc.Class({
         this.score = 0;
     },
 
+    setColor: function () {
+        if (Math.random() < 0.5) {
+            return cc.Color(189, 66, 66, 255)
+        }else {
+            return cc.Color(0, 0, 0, 255)
+        }
+    },
+
     spawnNewStar: function () {
         // Generate a new node in the scene with a preset template
         var newStar = cc.instantiate(this.starPrefab);
@@ -47,6 +55,7 @@ cc.Class({
         this.node.addChild(newStar);
         // Set up a random position for the star
         newStar.setPosition(this.getNewStarPosition());
+        newStar.color = this.setColor();
         newStar.getComponent('Square').game = this;
     },
     getRndInteger: function (min, max) {
