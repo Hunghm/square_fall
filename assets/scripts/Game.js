@@ -69,4 +69,10 @@ cc.Class({
         this.scoreDisplay.string = 'Score: ' + this.score;
         cc.audioEngine.playEffect(this.scoreAudio, false);
     },
+    gameOver: function () {
+        // Stop the jumping action of the Player node
+        this.player.stopAllActions();
+        // reload the "game" scene
+        cc.director.loadScene('game');
+    }
 });

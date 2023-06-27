@@ -23,14 +23,14 @@ cc.Class({
         // Set a flag when key pressed
         switch (event.keyCode) {
             case cc.macro.KEY.a:
-                let moveLeft = cc.tween().to(this.jumpDuration, { position: cc.v2(-250, 0)})
+                this.move = cc.tween().to(this.jumpDuration, { position: cc.v2(-250, 0)})
                 .call(this.playJumpSound, this)
-                cc.tween(this.node).then(moveLeft).start()
+                cc.tween(this.node).then(this.move).start()
                 break;
             case cc.macro.KEY.d:
-                let moveRight = cc.tween().to(this.jumpDuration, { position: cc.v2(250, 0)})
+                this.move = cc.tween().to(this.jumpDuration, { position: cc.v2(250, 0)})
                 .call(this.playJumpSound, this)
-                cc.tween(this.node).then(moveRight).start()
+                cc.tween(this.node).then(this.move).start()
                 break;
         }
     },

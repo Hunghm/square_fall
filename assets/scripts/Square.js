@@ -14,15 +14,6 @@ cc.Class({
         return dist;
     },
 
-    // getBottomDistance: function () {
-    //     // Determine the distance according to the position of the Player node
-    //     var groundPos = this.game.ground.getPosition();
-
-    //     // Calculate the distance between two nodes according to their positions
-    //     var dist = this.node.position.sub(groundPos).mag();
-    //     return dist;
-    // },
-
     onPicked: function () {
         // When the stars are being collected, invoke the interface in the Game script to generate a new star
         this.game.spawnNewStar();
@@ -44,7 +35,7 @@ cc.Class({
             return;
         }else
         if ((this.getPlayerDistance() < this.pickRadius) && !this.node.color.equals(cc.Color(189, 66, 66, 255))) {
-            this.onPicked();
+            this.game.gameOver();
         } else
         if ((this.node.y <= -300)) {
             this.onPicked();
